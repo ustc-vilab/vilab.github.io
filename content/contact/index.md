@@ -9,33 +9,28 @@ sections:
     content:
       title: Contact
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
-      email: test@example.org
-      phone: 888 888 88 88
+        ViLab专注“让机器在高速、低光、多模态场景下看得清、看得懂”。近三年围绕事件相机、自动驾驶生成、联邦视觉学习，在CCF-A会议/期刊发表论文10余篇。欢迎对计算机视觉、机器学习、智能系统感兴趣的本科实习生、推免生、博士生与博士后加入，一起把前沿算法写进真实世界。
+      email: sunxiaoyan@ustc.edu.cn
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
+        street: 100 Fuxing Road
+        city: Hefei
+        region: Anhui
+        postcode: '230031'
+        country: China
+        country_code: CN
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
+        latitude: '31.8217'
+        longitude: '117.12'
       appointment_url: 'https://calendly.com'
       #contact_links:
       #  - icon: comments
       #    icon_pack: fas
       #    name: Discuss on Forum
       #    link: 'https://discourse.gohugo.io'
-    
+  
       # Automatically link email and phone or display as text?
       autolink: true
-    
+  
       # Email form provider
       form:
         provider: netlify
