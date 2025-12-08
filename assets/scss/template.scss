@@ -7,3 +7,25 @@
 .cta-group {
   justify-content: center;
 }
+
+// ================================
+// People widget layout adjustments
+// ================================
+
+// 增大每个成员卡片和下一行头像之间的间距
+.people-widget .people-person {
+  margin-bottom: 1.75rem;
+}
+
+// 缩小 email / 毕业去向 / interests 之间的竖直间距
+.people-widget .people-person .people-email,
+.people-widget .people-person .people-graduation,
+.people-widget .people-person .people-interests {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+// 保证整个文字区域和头像有一个适中间距
+.people-widget .people-person .portrait-title {
+  margin-top: 0.5rem;
+}
