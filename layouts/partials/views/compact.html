@@ -1,0 +1,64 @@
+{{ $item := .item }}
+
+{{/* 定义链接逻辑 */}}
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+{{ $link = $item.Params.external_link }}
+{{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+<div class="media stream-item">
+    <div class="media-body">
+
+        <div class="section-subheading article-title mb-0 mt-0">
+            <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+        </div>
+
+        {{ with $item.Params.summary }}
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
+            <div class="article-style">
+                {{ . }}
+            </div>
+        </a>
+        {{ end }}
+
+        <div class="stream-meta article-metadata">
+            {{ if eq $item.Type "event" }}
+            <div>
+                <span>
+                    {{ partial "functions/get_event_dates" $item }}
+                </span>
+                {{ with $item.Params.location }}
+                <span class="middot-divider"></span>
+                <span>{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+
+            {{ if and $item.Params.authors (not (or (eq $item.Type "talk") (eq $item.Type "event"))) }}
+            <div class="article-metadata">
+                {{ partial "page_metadata_authors" $item }}
+            </div>
+            {{ end }}
+        </div>
+
+    </div>
+
+    <div class="ml-3">
+        {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
+        {{/* 如果找不到 featured，尝试找第一张图片 */}}
+        {{ if not $resource }}
+        {{ $resource = index ($item.Resources.ByType "image") 0 }}
+        {{ end }}
+
+        {{ with $resource }}
+        {{/* 🔴 核心修改：强制生成 800px 宽的高清图 */}}
+        {{ $image := .Resize "800x" }}
+
+        <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
+            <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy">
+        </a>
+        {{ end }}
+    </div>
+</div>
