@@ -1,5 +1,5 @@
 ---
-title: Welcome to the Class of 2023
+title: 欢迎2023级同学加入实验室！
 
 event: Welcome to the Class of 2023
 # event_url: https://example.org
@@ -12,7 +12,7 @@ location: HeFei
 #   postcode: '94305'
 #   country: United States
 
-summary: Welcome.
+# summary: Welcome.
 abstract: 'Welcome to the lab, Class of 2023! Please join us for a welcome dinner at Tongqing Building.'
 
 # Talk start and end times.

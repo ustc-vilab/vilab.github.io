@@ -1,5 +1,5 @@
 ---
-title: New Year's Day Gathering 2025
+title: 2025年新年聚餐
 
 event: New Year's Day Gathering 2025
 # event_url: https://example.org
@@ -12,7 +12,7 @@ location: HeFei
 #   postcode: '94305'
 #   country: United States
 
-summary: Gathering.
+#summary: Gathering.
 abstract: 'The entire lab is going out for a group dinner.'
 
 # Talk start and end times.

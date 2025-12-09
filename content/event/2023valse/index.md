@@ -1,5 +1,5 @@
 ---
-title: Participate in the 2023 Valse
+title: 参加2023年无锡Valse
 
 event: Participate in the 2023 Valse
 # event_url: https://example.org
@@ -12,7 +12,7 @@ location: Wuxi
 #   postcode: '94305'
 #   country: United States
 
-summary: Valse.
+# summary: Valse.
 abstract: 'All members of the laboratory attended the Valse event held in Wuxi.'
 
 # Talk start and end times.

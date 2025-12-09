@@ -1,5 +1,5 @@
 ---
-title: 2024 Year-End Summary
+title: 2024年年终总结
 
 event: 2024 Year-End Summary
 
@@ -13,7 +13,7 @@ location: HeFei
 #   postcode: '94305'
 #   country: United States
 
-summary: Summary.
+# summary: Summary.
 abstract: 'Welcome to the lab, Class of 2023! Please join us for a welcome dinner at Tongqing Building.'
 
 # Talk start and end times.

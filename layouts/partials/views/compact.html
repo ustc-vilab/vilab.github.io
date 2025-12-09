@@ -15,7 +15,15 @@
             <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
         </div>
 
-        {{ with $item.Params.summary }}
+        {{/* 🔴 修复点：不仅读取 params.summary，也读取自动生成的 .Summary */}}
+        {{ $show_summary := "" }}
+        {{ if $item.Params.summary }}
+        {{ $show_summary = $item.Params.summary }}
+        {{ else }}
+        {{ $show_summary = $item.Summary }}
+        {{ end }}
+
+        {{ with $show_summary }}
         <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
             <div class="article-style">
                 {{ . }}
@@ -53,7 +61,7 @@
         {{ end }}
 
         {{ with $resource }}
-        {{/* 🔴 核心修改：强制生成 800px 宽的高清图 */}}
+        {{/* 保持高清设置：800px */}}
         {{ $image := .Resize "800x" }}
 
         <a href="{{$link}}" {{ $target | safeHTMLAttr }}>

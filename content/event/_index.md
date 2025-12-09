@@ -1,5 +1,5 @@
 ---
-title: Team Building and Activities
+title: 近期新闻
 
 # Listing view
 view: compact

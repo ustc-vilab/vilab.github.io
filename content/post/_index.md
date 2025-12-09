@@ -1,5 +1,5 @@
 ---
-title: Latest News
+title: 研究方向
 
 # Listing view
 view: compact
