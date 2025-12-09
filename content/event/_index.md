@@ -1,5 +1,5 @@
 ---
-title: Recent & Upcoming Events
+title: Team Building and Activities
 
 # Listing view
 view: compact

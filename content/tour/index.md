@@ -18,18 +18,38 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
+      - title: Video Understanding
+        content: 'Video Understanding is a subfield of Computer Vision (CV) that aims to enable machines to perceive, analyze, and comprehend the content of video streams. Unlike static image analysis, it requires processing spatiotemporal data—understanding both what objects are present (spatial) and how they change or move over time (temporal).'
         align: left
         background:
           image:
-            filename: contact.jpg
+            filename: video_understanding.png
             filters:
               brightness: 0.7
           position: center
           color: '#555'
-      - title: World-Class Semiconductor Lab
-        content: 'Just opened last month!'
+      - title: Video Coding
+        content: 'Video Coding (short for Compressor-Decompressor) is the technology used to compress raw digital video data to make it manageable for storage and transmission, and then decompress it for playback. Without codecs, raw video files would be incredibly large (hundreds of gigabytes for a single movie).'
+        align: left
+        background:
+          image:
+            filename: video_coding.png
+            filters:
+              brightness: 0.7
+          position: center
+          color: '#555'
+      - title: Biomedical Imaging Technology
+        content: 'Biomedical Imaging is the technique and process of creating visual representations of the interior of a body for clinical analysis and medical intervention. It bridges the gap between biological science and engineering (physics, computer science, and math) to reveal internal structures hidden by the skin and bone.'
+        align: left
+        background:
+          image:
+            filename: biomedical_imaging_technology.png
+            filters:
+              brightness: 0.7
+          position: center
+          color: '#555'
+      - title: Neuromorphic Computing
+        content: 'Neuromorphic Computing refers to the design of computer chips and systems that model the structure and function of the biological human brain. Unlike traditional computers that process logic sequentially, neuromorphic systems aim to process information in a massively parallel, event-driven manner using artificial neurons and synapses.'
         align: right
         background:
           image:
