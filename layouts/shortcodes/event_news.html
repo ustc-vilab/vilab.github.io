@@ -1,0 +1,21 @@
+{{- $limit := 5 -}}
+{{- if .Get 0 -}}
+  {{- $limit = .Get 0 | int -}}
+{{- end -}}
+
+{{- $events := first $limit ( where site.RegularPages "Section" "event" ) -}}
+
+<ul class="news-list">
+  {{- range $events }}
+    {{- $event := . -}}
+    {{- $img := index ($event.Resources.ByType "image") 0 -}}
+    <li>
+      <a href="{{ $event.RelPermalink }}">{{ $event.Title }}</a>
+      {{- with $img }}
+        <span class="news-thumb">
+          <img src="{{ .RelPermalink }}" alt="{{ $event.Title }}">
+        </span>
+      {{- end }}
+    </li>
+  {{- end }}
+</ul>
