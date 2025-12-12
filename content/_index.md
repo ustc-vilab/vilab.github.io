@@ -35,9 +35,15 @@ sections:
             object-fit: contain; /* 不裁剪高度，完整显示图片 */
           }
           .hero-caption {
-            position: absolute; left: 0; right: 0; bottom: 0;
-            background: #6c2f8b; color: #fff; padding: 10px 14px;
-            font-weight: 600; font-size: 15px;
+            position: static;
+            display: block;
+            background: #6c2f8b;
+            color: #fff;
+            padding: 12px 16px;
+            font-weight: 700;
+            font-size: 1.1rem; /* 与顶栏菜单同尺寸 */
+            text-align: left;
+            margin-top: 0;
           }
           .hero-btn {
             position: absolute; top: 50%; transform: translateY(-50%);
@@ -60,7 +66,7 @@ sections:
           .hero-dot.active { background: #fff; }
 
           /* 左右两栏比例 1:1 */
-          .section-two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+          .section-two { display: grid; grid-template-columns: 6fr 4fr; gap: 24px; align-items: start; }
           .intro-card, .news-card {
             background: #fff; border: 1px solid #e5e5e5; border-radius: 4px; padding: 16px 18px;
           }
@@ -79,7 +85,7 @@ sections:
           }
 
           .news-list { list-style: none; padding: 0; margin: 0; }
-          .news-list li { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f1f1f1; }
+          .news-list li { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #f1f1f1; }
           .news-list a { color: #00529b; text-decoration: none; line-height: 1.3; margin-right: 8px; flex: 0 0 70%; }
           .news-date { color: #888; font-size: 13px; margin-left: 12px; white-space: nowrap; }
           .news-thumb { flex: 0 0 30%; }
@@ -102,10 +108,10 @@ sections:
         <div class="hero-wrap">
           <div class="hero-slider" id="hero-slider">
             <div class="hero-slides">
-              <div class="hero-slide"><img data-src="/media/biomedical_imaging_technology.png" data-caption="Biomedical Imaging Technology" alt="slide 1"></div>
-              <div class="hero-slide"><img data-src="/media/video_coding.png" data-caption="Video Coding" alt="slide 2"></div>
-              <div class="hero-slide"><img data-src="/media/video_understanding.png" data-caption="Video Understanding" alt="slide 3"></div>
-              <div class="hero-slide"><img data-src="/media/neuromorphic_computing.png" data-caption="Neuromorphic Computing" alt="slide 4"></div>
+              <div class="hero-slide"><img data-src="/media/biomedical_imaging_technology.png" data-caption="生物医学图像" alt="slide 1"></div>
+              <div class="hero-slide"><img data-src="/media/video_coding.png" data-caption="视频编码" alt="slide 2"></div>
+              <div class="hero-slide"><img data-src="/media/video_understanding.png" data-caption="视频理解" alt="slide 3"></div>
+              <div class="hero-slide"><img data-src="/media/neuromorphic.png" data-caption="类脑计算" alt="slide 4"></div>
             </div>
             <div class="hero-caption" id="hero-caption">Neuromorphic Computing</div>
             <button class="hero-btn prev" aria-label="Previous slide">‹</button>
@@ -120,7 +126,7 @@ sections:
             <div class="intro-img">
               <img src="/media/welcome.jpg" alt="group photo">
             </div>
-          <p>ViLab实验室隶属于类脑智能技术及应用国家工程实验室，由孙晓艳教授在中国科学技术大学一手创建。实验室面向人工智能中的重难点问题展开研究，承接多项重大科研项目。目前实验室的主要研究方向如：多模态图像视频理解、事件相机、音视频编码、医学图像处理。<br>
+          <p>视觉智能实验室（ViLab）隶属于类脑智能技术及应用国家工程实验室，由孙晓艳教授在中国科学技术大学一手创建。实验室面向人工智能中的重难点问题展开研究，承接多项重大科研项目。目前实验室的主要研究方向如：多模态图像视频理解、事件相机、音视频编码、医学图像处理。<br>
           实验室现有教授1名，博士后两名，博士研究生12名，硕士研究生15名以及若干毕业生。实验室科研经费充足，研究氛围自由活跃，计算机源充足、在各大期刊会议发表多篇论文，产出稳定。实验室多名同学在头部大厂和研究机构进行交流学习，欢迎你的加入！</p>
           </div>
 

@@ -30,16 +30,6 @@
   margin-top: 0.5rem;
 }
 
-/* 顶栏 Logo 文本：使用 Broadway 字体并放大 */
-.navbar-brand {
-  font-family: "Broadway", "Times New Roman", serif;
-  font-size: 2.1rem;
-  /* 顶栏左侧 “ViLab” 的字号，可再调大/调小 */
-  letter-spacing: 0.02em;
-}
-
-/* 顶栏 ViLab 颜色 */
-
 /* 顶栏右侧菜单文字整体放大一点 */
 .navbar-nav .nav-link {
   font-size: 1.1rem;
@@ -60,24 +50,49 @@ body {
   font-size: 0.95rem;
 }
 
+/* 顶栏品牌区：logo + 两行文字 + ViLab */
 .navbar-brand {
-  display: inline-flex; // 让图标和文字在一行
+  display: inline-flex;
   align-items: center;
-  gap: 0.8rem; // 图标和 ViLab 之间的间距（向右推一点）
-  color: rgb(0, 112, 192) !important; // ViLab 字体颜色 = (0,112,192)
+  gap: 0.6rem;
+  color: rgb(0, 112, 192);
   font-family: "Broadway", "Times New Roman", serif;
-  font-size: 2.1rem; // 顶栏 ViLab 字号
+  font-size: 2.1rem; /* ViLab 字号 */
+  letter-spacing: 0.02em;
 }
 
-.navbar-brand::before {
-  content: "";
-  display: inline-block;
-  width: 1.6em; // 用 em 保证和字体高度接近
-  height: 1.6em; // 这里 1.6 * 2.1rem ≈ 字体总高，可按观感微调
-  background-image: url("/media/ustc-logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; // 保持比例完整显示校标
+.navbar-brand .brand-logo {
+  width: 1.6em;
+  height: 1.6em;
+  background: url("/media/ustc-logo.png") center/contain no-repeat;
+  flex-shrink: 0;
+}
+
+.navbar-brand .brand-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+  color: #000;
+  font-family: "SimHei", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem; /* 与右侧菜单同尺寸 */
+  text-align: center;
+}
+
+.navbar-brand .brand-en {
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: "Arial Black", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: rgb(0, 112, 192);
+}
+
+.navbar-brand .brand-mark {
+  font-family: "Broadway", "Times New Roman", serif;
+  font-size: 2.1rem;
+  color: rgb(0, 112, 192);
+  line-height: 1;
+  display: none; /* 暂时隐藏 ViLab */
 }
 
 /* 顶栏右侧菜单：黑体 + 加粗 */

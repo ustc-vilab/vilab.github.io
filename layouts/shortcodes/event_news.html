@@ -5,7 +5,7 @@
 
 {{- $events := first $limit ( where site.RegularPages "Section" "event" ) -}}
 
-<ul class="news-list">
+<!-- <ul class="news-list">
   {{- range $events }}
     {{- $event := . -}}
     {{- $img := index ($event.Resources.ByType "image") 0 -}}
@@ -16,6 +16,17 @@
           <img src="{{ .RelPermalink }}" alt="{{ $event.Title }}">
         </span>
       {{- end }}
+    </li>
+  {{- end }}
+</ul> -->
+
+<ul class="news-list">
+  {{- range $events }}
+    {{- $event := . -}}
+    {{- $date := $event.Date.Format "2006年1月" -}}
+    <li>
+      <a href="{{ $event.RelPermalink }}">{{ $event.Title }}</a>
+      <span class="news-date">{{ $date }}</span>
     </li>
   {{- end }}
 </ul>
