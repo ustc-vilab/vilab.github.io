@@ -22,7 +22,7 @@ role: 毕业生
 
 # Organizations/Affiliations
 organizations:
-  - name: 
+  - name: 中电十所
 
 # graduation_destination: 
 # Short bio (displayed in user profile at end of posts)
@@ -31,7 +31,7 @@ organizations:
 interests:
   - 事件相机、微表情识别
 
-
+graduation_destination: 去向：中电十所
 # education:
 #   courses:
 #     - course: PhD in Artificial Intelligence
