@@ -1,58 +1,23 @@
-// Make page header alignment consistent with widget page header alignment
+/* ================================
+   全局基础样式调整
+   ================================ */
+
+/* Make page header alignment consistent with widget page header alignment */
 .universal-wrapper h1 {
   text-align: center;
 }
 
-// Center the CTA shortcode button
+/* Center the CTA shortcode button */
 .cta-group {
   justify-content: center;
 }
 
-// ================================
-// People widget layout adjustments
-// ================================
-
-// 增大每个成员卡片和下一行头像之间的间距
-.people-widget .people-person {
-  margin-bottom: 1.75rem;
-}
-
-// 缩小 email / 毕业去向 / interests 之间的竖直间距
-.people-widget .people-person .people-email,
-.people-widget .people-person .people-graduation,
-.people-widget .people-person .people-interests {
-  margin-top: 0.15rem;
-  margin-bottom: 0.15rem;
-}
-
-// 保证整个文字区域和头像有一个适中间距
-.people-widget .people-person .portrait-title {
-  margin-top: 0.5rem;
-}
-
-/* 顶栏 Logo 文本：使用 Broadway 字体并放大 */
-.navbar-brand {
-  font-family: "Broadway", "Times New Roman", serif;
-  font-size: 2.1rem;
-  /* 顶栏左侧 “ViLab” 的字号，可再调大/调小 */
-  letter-spacing: 0.02em;
-}
-
-/* 顶栏 ViLab 颜色 */
-
-/* 顶栏右侧菜单文字整体放大一点 */
-.navbar-nav .nav-link {
-  font-size: 1.1rem;
-  /* 默认大约是 1rem，可按需要调整 */
-}
-
 /* 全站基础字号略微缩小 */
 body {
-  font-size: 0.9rem;
-  /* 默认大约 1rem，这里整体缩小 10% */
+  font-size: 0.9rem; /* 默认约 1rem，缩小 10% */
 }
 
-/* 主要内容区域再略微缩小，避免和顶栏抢视觉 */
+/* 主要内容区域再略微缩小 */
 .article-style,
 .home-section,
 .widget,
@@ -60,62 +25,111 @@ body {
   font-size: 0.95rem;
 }
 
-.navbar-brand {
-  display: inline-flex; // 让图标和文字在一行
-  align-items: center;
-  gap: 0.8rem; // 图标和 ViLab 之间的间距（向右推一点）
-  color: rgb(0, 112, 192) !important; // ViLab 字体颜色 = (0,112,192)
-  font-family: "Broadway", "Times New Roman", serif;
-  font-size: 2.1rem; // 顶栏 ViLab 字号
-}
+/* ================================
+   顶栏 (Navbar) 样式调整
+   ================================ */
 
-.navbar-brand::before {
-  content: "";
-  display: inline-block;
-  width: 1.6em; // 用 em 保证和字体高度接近
-  height: 1.6em; // 这里 1.6 * 2.1rem ≈ 字体总高，可按观感微调
-  background-image: url("/media/ustc-logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; // 保持比例完整显示校标
-}
-
-/* 顶栏右侧菜单：黑体 + 加粗 */
+/* 顶栏右侧菜单：黑体 + 加粗 + 放大 */
 .navbar-nav .nav-link {
-  font-size: 1.1rem;
+  font-size: 1.1rem; /* 默认约 1rem */
   font-family: "SimHei", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
 }
 
-/* 右上角菜单 + 首页两个标题：统一黑体加粗 + 同一字号 */
-.navbar-nav .nav-link,
+/* 品牌区 (Logo + 文字) */
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: rgb(0, 112, 192);
+  font-family: "Broadway", "Times New Roman", serif;
+  font-size: 2.1rem;
+  letter-spacing: 0.02em;
+}
+
+.navbar-brand .brand-logo {
+  width: 1.6em;
+  height: 1.6em;
+  background: url("/media/ustc-logo.png") center/contain no-repeat;
+  flex-shrink: 0;
+}
+
+.navbar-brand .brand-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+  color: #000;
+  font-family: "SimHei", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem; /* 与右侧菜单一致 */
+  text-align: center;
+}
+
+.navbar-brand .brand-en {
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: "Arial Black", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: rgb(0, 112, 192);
+}
+
+.navbar-brand .brand-mark {
+  font-family: "Broadway", "Times New Roman", serif;
+  font-size: 2.1rem;
+  color: rgb(0, 112, 192);
+  line-height: 1;
+  display: none; /* 暂时隐藏 ViLab */
+}
+
+/* ================================
+   People Widget (人员列表) 样式调整
+   ================================ */
+
+/* 增大每个成员卡片和下一行头像之间的间距 */
+.people-widget .people-person {
+  margin-bottom: 1.75rem;
+}
+
+/* 缩小 email / 毕业去向 / interests 之间的竖直间距 */
+.people-widget .people-person .people-email,
+.people-widget .people-person .people-graduation,
+.people-widget .people-person .people-interests {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+/* 保证整个文字区域和头像有一个适中间距 */
+.people-widget .people-person .portrait-title {
+  margin-top: 0.5rem;
+}
+
+/* ================================
+   首页两栏布局 (实验室简介 + 新闻)
+   ================================ */
+
+/* 统一标题样式：黑体加粗 + 同一字号 */
 .intro-card h3,
 .news-card h3 {
   font-size: 1.1rem;
   font-family: "SimHei", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
-}
-
-/* 保留标题的上边距设置（如果需要） */
-.intro-card h3,
-.news-card h3 {
   margin-top: 0;
 }
 
-/* 右侧“动态新闻”每条：文案 7 / 图片 3 */
+/* 右侧“动态新闻”每条布局 */
 .news-list li {
   display: flex;
   align-items: center;
 }
 
-/* 左侧文案区域，占 7/10 宽度 */
-.news-list li>a {
+/* 左侧文案 (70%) */
+.news-list li > a {
   flex: 0 0 70%;
   margin-right: 8px;
   line-height: 1.3;
 }
 
-/* 右侧缩略图，占 3/10 宽度 */
+/* 右侧缩略图 (30%) */
 .news-thumb {
   flex: 0 0 30%;
 }
@@ -129,47 +143,39 @@ body {
 }
 
 /* ================================
-   Post 列表样式：6:4 布局 + 隐藏时间 + 禁止点击
+   [核心修改] Post 专属列表样式
+   只对拥有 .style-post-special 类的元素生效
+   (由 compact.html 里的代码控制添加该类)
    ================================ */
 
-/* 1. 容器基础布局 */
-.media.stream-item {
+/* 1. 容器：左图右文 + 垂直居中 */
+.media.stream-item.style-post-special {
   display: flex !important;
-  flex-direction: row-reverse !important;
-  /* 左图右文 */
+  flex-direction: row-reverse !important; 
   align-items: center !important;
-  /* 垂直居中 */
   gap: 2rem;
   margin-bottom: 3rem;
   border-bottom: 1px solid #eee;
   padding-bottom: 2rem;
-
-  /* [新增] 核心：禁止整个卡片的点击交互 */
-  /* 注意：这可能会影响文本复制，如果需要复制文本，请删掉下面这一行，改用后面的针对 a 标签的写法 */
-  /* pointer-events: none !important; */
 }
 
-/* 2. [新增] 隐藏时间与元数据 */
-.media.stream-item .stream-meta,
-.media.stream-item .article-date,
-.media.stream-item .page-subtitle {
+/* 2. 隐藏时间与元数据 (只针对 Post) */
+.media.stream-item.style-post-special .stream-meta,
+.media.stream-item.style-post-special .article-date,
+.media.stream-item.style-post-special .page-subtitle {
   display: none !important;
 }
 
-/* 3. [新增] 让原本的链接失效 (标题和图片) */
-.media.stream-item a {
+/* 3. 让链接失效 (只针对 Post) */
+.media.stream-item.style-post-special a {
   pointer-events: none !important;
-  /* 禁止点击 */
   cursor: default !important;
-  /* 鼠标不显示为手型 */
   text-decoration: none !important;
-  /* 去掉下划线 */
   color: inherit !important;
-  /* 颜色强制跟随普通文字，不变蓝 */
 }
 
 /* 4. 强制压缩文字区域 (40%) */
-.media.stream-item .media-body {
+.media.stream-item.style-post-special .media-body {
   flex: 0 0 40% !important;
   max-width: 40% !important;
   min-width: 40% !important;
@@ -177,7 +183,7 @@ body {
 }
 
 /* 5. 强制撑开图片区域 (60%) */
-.media.stream-item> :not(.media-body) {
+.media.stream-item.style-post-special > :not(.media-body) {
   flex: 0 0 60% !important;
   width: 60% !important;
   max-width: 60% !important;
@@ -185,18 +191,18 @@ body {
 }
 
 /* 6. 图片本体：强制拉伸 */
-.media.stream-item img {
+.media.stream-item.style-post-special img {
   width: 100% !important;
   max-width: 100% !important;
   height: auto !important;
   display: block !important;
   border-radius: 6px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   object-fit: cover;
 }
 
-/* 7. 标题和文字样式 */
-.media.stream-item .article-title {
+/* 7. 标题样式 */
+.media.stream-item.style-post-special .article-title {
   font-family: "SimHei", "Microsoft YaHei", sans-serif;
   font-size: 1.0rem !important;
   line-height: 1.4;
@@ -204,32 +210,31 @@ body {
   margin-top: 0;
 }
 
-.media.stream-item .article-style,
-.media.stream-item p {
+/* 8. 正文摘要样式 */
+.media.stream-item.style-post-special .article-style, 
+.media.stream-item.style-post-special p {
   font-size: 0.85rem !important;
   line-height: 1.5;
   color: #555;
 }
 
 /* ================================
-   移动端适配
+   移动端适配 (Post 专属)
    ================================ */
 @media (max-width: 768px) {
-  .media.stream-item {
-    flex-direction: column-reverse !important;
-    /* 手机上图在上，文在下 */
+  .media.stream-item.style-post-special {
+    flex-direction: column-reverse !important; 
     align-items: flex-start !important;
   }
-
-  /* 手机上恢复全宽 */
-  .media.stream-item .media-body,
-  .media.stream-item> :not(.media-body) {
+  
+  .media.stream-item.style-post-special .media-body,
+  .media.stream-item.style-post-special > :not(.media-body) {
     flex: 0 0 100% !important;
     width: 100% !important;
     max-width: 100% !important;
   }
-
-  .media.stream-item> :not(.media-body) {
+  
+  .media.stream-item.style-post-special > :not(.media-body) {
     margin-bottom: 1rem !important;
   }
 }
