@@ -11,7 +11,7 @@ authors:
   - 吴沛熹
 
 avatar_anchor: Top  # 可选值：Top / Center / Bottom / Left / Right / Smart
-
+admission_year: 2024
 # Is this the primary user of the site?
 superuser: false
 

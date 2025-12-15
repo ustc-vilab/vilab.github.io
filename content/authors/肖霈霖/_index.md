@@ -14,7 +14,7 @@ avatar_anchor: Bottom  # 可选值：Top / Center / Bottom / Left / Right / Smar
 
 # Is this the primary user of the site?
 superuser: false
-
+graduation_year: 2025
 profile: false
 
 # Role/position

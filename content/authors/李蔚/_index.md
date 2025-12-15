@@ -10,7 +10,7 @@ last_name: li
 authors:
   - 李蔚
 
-
+admission_year: 2025
 avatar_anchor: Top  # 可选值：Top / Center / Bottom / Left / Right / Smart
 
 # Is this the primary user of the site?

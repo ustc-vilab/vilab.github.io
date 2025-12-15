@@ -23,7 +23,7 @@ role: 毕业生
 # Organizations/Affiliations
 organizations:
   - name: 优酷
-
+graduation_year: 2025
 graduation_destination: 去向：优酷
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.

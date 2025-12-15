@@ -9,7 +9,7 @@ last_name: kai
 # Username (this should match the folder name)
 authors:
   - 开大纯
-
+admission_year: 2023
 avatar_anchor: Top  # 可选值：Top / Center / Bottom / Left / Right / Smart
 
 # Is this the primary user of the site?

@@ -16,7 +16,7 @@ avatar_anchor: Center  # 可选值：Top / Center / Bottom / Left / Right / Smar
 superuser: false
 
 profile: false
-
+admission_year: 2025
 # Role/position
 role: 硕士生
 

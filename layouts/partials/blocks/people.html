@@ -83,12 +83,51 @@
   {{ range $group_index, $group := $block.content.user_groups }}
     {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice $group) }}
 
-    {{/* Sort */}}
     {{ $sort_by := $block.content.sort_by | default "Params.last_name" }}
     {{ $sort_by = partial "blox-core/functions/get_sort_by_parameter" $sort_by }}
     {{ $sort_ascending := $block.content.sort_ascending | default true }}
     {{ $sort_order := cond $sort_ascending "asc" "desc" }}
-    {{ $query = sort $query $sort_by $sort_order }}
+
+    {{ $sorted_query := slice }}
+    {{ if or (eq $group "博士生") (eq $group "硕士生") }}
+      {{/* 步骤1：先按入学年份升序排（仅含年份的作者） */}}
+      {{ $has_year := where $query "Params.admission_year" "ne" nil }}
+      {{ $has_year = sort $has_year "Params.admission_year" "asc" }}
+      {{/* 步骤2：按年份分组，每组内按姓氏升序 */}}
+      {{ $years := slice }}
+      {{ range $p := $has_year }}{{ $years = $years | append $p.Params.admission_year }}{{ end }}
+      {{ $years = uniq $years | sort }}
+      {{ range $year := $years }}
+        {{ $year_group := where $has_year "Params.admission_year" "eq" $year }}
+        {{ $year_group = sort $year_group "Params.last_name" "asc" }}
+        {{ $sorted_query = $sorted_query | append $year_group }}
+      {{ end }}
+      {{/* 步骤3：追加无年份的作者（按姓氏升序） */}}
+      {{ $no_year := where $query "Params.admission_year" "eq" nil }}
+      {{ $no_year = sort $no_year "Params.last_name" "asc" }}
+      {{ $sorted_query = $sorted_query | append $no_year }}
+    {{ else if eq $group "毕业生" }}
+      {{/* 步骤1：先按毕业年份升序排（仅含年份的作者） */}}
+      {{ $has_year := where $query "Params.graduation_year" "ne" nil }}
+      {{ $has_year = sort $has_year "Params.graduation_year" "asc" }}
+      {{/* 步骤2：按年份分组，每组内按姓氏升序 */}}
+      {{ $years := slice }}
+      {{ range $p := $has_year }}{{ $years = $years | append $p.Params.graduation_year }}{{ end }}
+      {{ $years = uniq $years | sort }}
+      {{ range $year := $years }}
+        {{ $year_group := where $has_year "Params.graduation_year" "eq" $year }}
+        {{ $year_group = sort $year_group "Params.last_name" "asc" }}
+        {{ $sorted_query = $sorted_query | append $year_group }}
+      {{ end }}
+      {{/* 步骤3：追加无年份的作者（按姓氏升序） */}}
+      {{ $no_year := where $query "Params.graduation_year" "eq" nil }}
+      {{ $no_year = sort $no_year "Params.last_name" "asc" }}
+      {{ $sorted_query = $sorted_query | append $no_year }}
+    {{ else }}
+      {{/* 其他组：沿用原有规则 */}}
+      {{ $sorted_query = sort $query $sort_by $sort_order }}
+    {{ end }}
+    {{ $query = $sorted_query }}
 
     {{ if and $show_group_divider (gt $group_index 0) }}
       <div class="col-12"><hr class="people-divider mb-4 mt-3"></div>
