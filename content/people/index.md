@@ -1,5 +1,5 @@
 ---
-title: People
+title: 实验室成员
 date: 2022-10-24
 
 type: landing

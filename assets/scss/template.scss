@@ -34,6 +34,12 @@
   margin-top: 0.5rem;
 }
 
+.navbar {
+  min-height: 85px; // 设置您期望的最小高度，例如 80px
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 /* 顶栏右侧菜单文字整体放大一点 */
 .navbar-nav .nav-link {
   font-size: 1.1rem;
@@ -172,6 +178,16 @@ body {
   margin-top: 0.5rem;
 }
 
+.page-body > .universal-wrapper {
+  width: 1250px !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  box-sizing: border-box !important;
+}
+
 /* ================================
    首页两栏布局 (实验室简介 + 新闻)
    ================================ */
@@ -193,14 +209,14 @@ body {
 
 /* 左侧文案 (70%) */
 .news-list li > a {
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   margin-right: 8px;
   line-height: 1.3;
 }
 
 /* 右侧缩略图 (30%) */
 .news-thumb {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
 }
 
 .news-thumb img {

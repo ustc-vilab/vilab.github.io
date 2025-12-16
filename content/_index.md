@@ -11,7 +11,7 @@ sections:
           /* 轮播容器高度可按需调 */
           .hero-wrap,
           .section-two {
-            max-width: 1200px;
+            max-width: 1360px;
             margin: 0 auto 24px;
           }
 
@@ -21,7 +21,7 @@ sections:
             overflow: hidden;
             border-radius: 6px;
             width: 100%;
-            max-width: 1200px;   /* 与下方两栏同宽，可按需调整 */
+            max-width: 1360px;   /* 与下方两栏同宽，可按需调整 */
             margin: 0 auto;
             background: #000;    /* 可换成你要的底色，用于未占满时的背景 */
           }
@@ -37,7 +37,7 @@ sections:
           .hero-caption {
             position: static;
             display: block;
-            background: #6c2f8b;
+            background: rgb(0, 112, 192);
             color: #fff;
             padding: 12px 16px;
             font-weight: 700;
@@ -127,12 +127,12 @@ sections:
               <img src="/media/welcome.jpg" alt="group photo">
             </div>
           <p>视觉智能实验室（ViLab）隶属于类脑智能技术及应用国家工程实验室，由孙晓艳教授在中国科学技术大学一手创建。实验室面向人工智能中的重难点问题展开研究，承接多项重大科研项目。目前实验室的主要研究方向如：多模态图像视频理解、事件相机、音视频编码、医学图像处理。<br>
-          实验室现有教授1名，博士后两名，博士研究生12名，硕士研究生15名以及若干毕业生。实验室科研经费充足，研究氛围自由活跃，计算机源充足、在各大期刊会议发表多篇论文，产出稳定。实验室多名同学在头部大厂和研究机构进行交流学习，欢迎你的加入！</p>
+          实验室现有教授1名，副研究员1名，博士后1名，博士研究生19名，硕士研究生26名以及若干毕业生。实验室科研经费充足，研究氛围自由活跃，计算机资源充足、在各大期刊会议发表多篇论文，产出稳定。实验室多名同学在头部大厂和研究机构进行交流学习，欢迎你的加入！</p>
           </div>
 
           <div class="news-card">
             <h3>新闻</h3>
-            {{< event_news 5 >}}
+            {{< event_news 7 >}}
           </div>
         </div>
 

@@ -226,16 +226,16 @@
 # Search
 
 - id: search
-  translation: Search
+  translation: 搜索
 
 - id: search_placeholder
-  translation: Search...
+  translation: 搜索...
 
 - id: search_results
-  translation: results found
+  translation: 个结果
 
 - id: search_no_results
-  translation: No results found
+  translation: 没找到结果
 
 - id: search_common_queries
   translation: Common searches

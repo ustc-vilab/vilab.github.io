@@ -13,7 +13,7 @@ location: Wuxi
 #   country: United States
 
 #summary: Congratulations to Lubin Gan and all the collaborators for their paper at ESWA'25.
-summary: 恭喜李欣宇和陈杰同学！
+summary: 恭喜李欣羽和陈杰同学！
 abstract: 'All members of the laboratory attended the Valse event held in Wuxi.'
 
 # Talk start and end times.

@@ -13,7 +13,7 @@ location: Wuxi
 #   country: United States
 
 #summary: Congratulations to Hebei Li, Dachun Kai, Peixi Wu and all the collaborators for their paper at AAAI'25.
-summary: 恭喜李和倍、开大纯、吴沛喜同学！
+summary: 恭喜李和倍、开大纯、吴沛熹同学！
 abstract: 'All members of the laboratory attended the Valse event held in Wuxi.'
 
 # Talk start and end times.
