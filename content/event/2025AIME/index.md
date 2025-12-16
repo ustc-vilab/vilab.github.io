@@ -1,7 +1,6 @@
 ---
-#title: Two papers are accepted by MM'25
-title: 祝贺实验室两项科研成果被 MM'25 录用！
-
+#title: One paper is accepted by AIME'25
+title: 祝贺实验室一项科研成果被 AIME'25 录用！
 event: Participate in the 2023 Valse
 # event_url: https://example.org
 
@@ -13,14 +12,14 @@ location: Wuxi
 #   postcode: '94305'
 #   country: United States
 
-#summary: Congratulations to Yijun Wang, Zhangchi Hu and all the collaborators for their papers at MM'25.
-summary: 恭喜王义钧和胡张驰同学！
+#summary: Congratulations to Haoyu Wang and all the collaborators for their paper at AIME'25.
+summary: 恭喜王浩宇同学！
 abstract: 'All members of the laboratory attended the Valse event held in Wuxi.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2025-10-01T18:00:00Z'
-date_end: '2025-10-01T21:00:00Z'
+date: '2025-09-01T18:00:00Z'
+date_end: '2025-09-01T21:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -40,3 +39,4 @@ slides:
 
 projects:
 ---
+

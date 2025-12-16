@@ -1,6 +1,6 @@
 ---
-title: One paper is accepted by ESWA'25
-
+#title: One paper is accepted by ESWA'25
+title: 祝贺实验室一项科研成果被 ESWA'25 录用！
 event: Participate in the 2023 Valse
 # event_url: https://example.org
 
@@ -12,7 +12,8 @@ location: Wuxi
 #   postcode: '94305'
 #   country: United States
 
-summary: Congratulations to Lubin Gan and all the collaborators for their paper at ESWA'25.
+#summary: Congratulations to Lubin Gan and all the collaborators for their paper at ESWA'25.
+summary: 恭喜甘露斌同学！
 abstract: 'All members of the laboratory attended the Valse event held in Wuxi.'
 
 # Talk start and end times.
