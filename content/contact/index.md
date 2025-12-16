@@ -1,15 +1,59 @@
 ---
-title: Contact
+title: Join Us
 date: 2022-10-24
 
+# Page type, do not modify
 type: landing
 
+# Page sections
 sections:
+  - block: markdown
+    content:
+      title: Join Us
+      subtitle: We are looking for self-motivated researchers.
+    design:
+      columns: '1'
+
+
+  - block: markdown
+    content:
+      title: PhD / Master Students
+      text: |
+        我们要寻找对计算机视觉（Video Understanding, 3D Vision）有强烈兴趣的学生。如果你有扎实的数学基础和良好的编程能力，欢迎加入。
+
+        **Requirements:**
+        - Strong coding skills in Python/PyTorch.
+        - Solid background in mathematics and deep learning.
+        - Self-motivated and good English communication skills.
+        - Experience in top-tier conferences (CVPR/ICCV/ECCV) is a plus.
+
+        **How to Apply:**
+
+        Please send your email with the following format:
+
+        **To:** vilab@ustc.edu.cn  
+        **Subject:** [PhD Application] Name - University  
+        **Attachments:** Resume/CV, Transcripts  
+
+        *Due to the high volume of emails, we may not be able to reply to every applicant.*
+    design:
+      columns: '2'
+  
+
+  - block: markdown
+    content:
+      title: Research Interns
+      text: |
+        我们也欢迎本科生来实验室进行科研实习。通常要求实习时间不少于 6 个月。
+
+        - Undergraduates from CS/Math/EE majors.
+        - Available for at least 6 months.
+    design:
+      columns: '2'
+
   - block: contact
     content:
-      title: Contact
-      text: |-
-        ViLab专注“让机器在高速、低光、多模态场景下看得清、看得懂”。近三年围绕事件相机、自动驾驶生成、联邦视觉学习，在CCF-A会议/期刊发表论文10余篇。欢迎对计算机视觉、机器学习、智能系统感兴趣的本科实习生、推免生、博士生与博士后加入，一起把前沿算法写进真实世界。
+      title: Our Location
       email: sunxiaoyan@ustc.edu.cn
       address:
         street: 100 Fuxing Road, Gaoxin Campus
@@ -21,45 +65,9 @@ sections:
       coordinates:
         latitude: '31.8217'
         longitude: '117.12'
-
-      appointment_url: 'https://calendly.com'
-      #contact_links:
-      #  - icon: comments
-      #    icon_pack: fas
-      #    name: Discuss on Forum
-      #    link: 'https://discourse.gohugo.io'
+      #directions: xxx
   
-      # Automatically link email and phone or display as text?
       autolink: true
-  
-      # Email form provider
-      # form:
-       # provider: netlify
-        #formspree:
-         # id:
-        #netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-         # captcha: false
     design:
-      columns: '1'
-
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: contact.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+      columns: '2'
 ---
