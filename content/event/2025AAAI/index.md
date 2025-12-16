@@ -1,6 +1,6 @@
 ---
-title: Three papers are accepted by AAAI'25
-
+#title: Three papers are accepted by AAAI'25
+title: 祝贺实验室三项科研成果被 AAAI'25 录用！
 event: Participate in the 2023 Valse
 # event_url: https://example.org
 
@@ -12,7 +12,8 @@ location: Wuxi
 #   postcode: '94305'
 #   country: United States
 
-summary: Congratulations to Hebei Li, Dachun Kai, Peixi Wu and all the collaborators for their paper at AAAI'25.
+#summary: Congratulations to Hebei Li, Dachun Kai, Peixi Wu and all the collaborators for their paper at AAAI'25.
+summary: 恭喜李和倍、开大纯、吴沛喜同学！
 abstract: 'All members of the laboratory attended the Valse event held in Wuxi.'
 
 # Talk start and end times.

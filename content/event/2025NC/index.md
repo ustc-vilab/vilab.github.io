@@ -1,6 +1,6 @@
 ---
-title: One paper is accepted by AIIM'25
-
+#title: One paper is accepted by ESWA'25
+title: 祝贺实验室一项科研成果被 Neurocomputing 录用！
 event: Participate in the 2023 Valse
 # event_url: https://example.org
 
@@ -12,13 +12,14 @@ location: Wuxi
 #   postcode: '94305'
 #   country: United States
 
-summary: Congratulations to Haoyu Wang and all the collaborators for their paper at AIIM'25.
+#summary: Congratulations to Lubin Gan and all the collaborators for their paper at ESWA'25.
+summary: 恭喜占语承同学！
 abstract: 'All members of the laboratory attended the Valse event held in Wuxi.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2025-09-01T18:00:00Z'
-date_end: '2025-09-01T21:00:00Z'
+date: '2025-04-01T18:00:00Z'
+date_end: '2025-04-01T21:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -38,3 +39,4 @@ slides:
 
 projects:
 ---
+
