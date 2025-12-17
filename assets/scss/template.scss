@@ -323,3 +323,24 @@ body {
     margin-bottom: 1rem !important;
   }
 }
+
+/* ================================
+   [新增] 强制锁定 Event/News 列表内的条目链接
+   ================================ */
+
+/* 针对标准列表视图 (Stream View) 中的 Event 链接 */
+.universal-wrapper .media.stream-item a[href*="/event/"],
+.universal-wrapper .card-simple a[href*="/event/"] {
+  pointer-events: none !important;
+  /* 禁止点击 */
+  cursor: default !important;
+  /* 鼠标不显示手型 */
+  text-decoration: none !important;
+}
+
+/* 如果还有图片链接，也一并锁死 */
+.universal-wrapper .media.stream-item .article-title a,
+.universal-wrapper .media.stream-item .card-image a {
+  pointer-events: none !important;
+  cursor: default !important;
+}
