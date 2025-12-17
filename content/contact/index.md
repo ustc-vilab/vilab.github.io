@@ -2,7 +2,6 @@
 title: Join Us
 date: 2022-10-24
 
-# Page type, do not modify
 type: landing
 
 # Page sections
@@ -17,43 +16,43 @@ sections:
 
   - block: markdown
     content:
-      title: PhD / Master Students
+      title: 博士生 / 硕士生
       text: |
         我们要寻找对计算机视觉（Video Understanding, 3D Vision）有强烈兴趣的学生。如果你有扎实的数学基础和良好的编程能力，欢迎加入。
 
-        **Requirements:**
-        - Strong coding skills in Python/PyTorch.
-        - Solid background in mathematics and deep learning.
-        - Self-motivated and good English communication skills.
-        - Experience in top-tier conferences (CVPR/ICCV/ECCV) is a plus.
+        **要求:**
+        - 熟练掌握 Python/PyTorch 编程。
+        - 具备扎实的数学和深度学习基础。
+        - 积极主动，并具有良好的英语沟通能力。
+        - 有顶级会议（CVPR/ICCV/ECCV）发表经验者优先。
 
-        **How to Apply:**
+        **申请方式:**
 
-        Please send your email with the following format:
+        请按以下格式发送邮件：
 
-        **To:** vilab@ustc.edu.cn  
-        **Subject:** [PhD Application] Name - University  
-        **Attachments:** Resume/CV, Transcripts  
+        **收件人:** sunxiaoyan@ustc.edu.cn  
+        **邮件主题:** [博士生申请] 姓名 - 毕业院校  
+        **附件:** 个人简历、成绩单  
 
-        *Due to the high volume of emails, we may not be able to reply to every applicant.*
+        *由于申请邮件较多，我们可能无法一一回复。*
     design:
       columns: '2'
   
 
   - block: markdown
     content:
-      title: Research Interns
+      title: 实习生
       text: |
         我们也欢迎本科生来实验室进行科研实习。通常要求实习时间不少于 6 个月。
 
-        - Undergraduates from CS/Math/EE majors.
-        - Available for at least 6 months.
+        - 计算机科学、数学、电子工程等相关专业的本科生。
+        - 能保证至少 6 个月的实习期。
     design:
       columns: '2'
 
   - block: contact
     content:
-      title: Our Location
+      title: 地址
       email: sunxiaoyan@ustc.edu.cn
       address:
         street: 100 Fuxing Road, Gaoxin Campus
@@ -71,3 +70,4 @@ sections:
     design:
       columns: '2'
 ---
+
