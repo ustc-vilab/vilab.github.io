@@ -108,10 +108,10 @@ sections:
         <div class="hero-wrap">
           <div class="hero-slider" id="hero-slider">
             <div class="hero-slides">
-              <div class="hero-slide"><img data-src="/media/biomedical_imaging_technology.png" data-caption="生物医学图像" alt="slide 1"></div>
-              <div class="hero-slide"><img data-src="/media/video_coding.png" data-caption="视频编码" alt="slide 2"></div>
-              <div class="hero-slide"><img data-src="/media/video_understanding.png" data-caption="视频理解" alt="slide 3"></div>
-              <div class="hero-slide"><img data-src="/media/neuromorphic.png" data-caption="类脑计算" alt="slide 4"></div>
+              <div class="hero-slide"><img data-src="./media/biomedical_imaging_technology.png" data-caption="生物医学图像" alt="slide 1"></div>
+              <div class="hero-slide"><img data-src="./media/video_coding.png" data-caption="视频编码" alt="slide 2"></div>
+              <div class="hero-slide"><img data-src="./media/video_understanding.png" data-caption="视频理解" alt="slide 3"></div>
+              <div class="hero-slide"><img data-src="./media/neuromorphic.png" data-caption="类脑计算" alt="slide 4"></div>
             </div>
             <div class="hero-caption" id="hero-caption">Neuromorphic Computing</div>
             <button class="hero-btn prev" aria-label="Previous slide">‹</button>
