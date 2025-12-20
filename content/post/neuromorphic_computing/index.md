@@ -4,8 +4,7 @@ date: 2020-12-02
 image:
   focal_point: 'top'
 ---
-本方向专注于事件相机（Event Camera）信号的处理与高阶视觉应用，旨在挖掘类脑视觉传感器的极速与高动态范围优势。主要研究内容包括：构建基于自注意力的事件分组与特征提取框架，通过分层聚合提升表征能力；设计纹理增强网络，利用迭代融合技术还原图像细节；探索事件引导的语义分割与多模态特征融合模型，增强复杂场景下的解析能力。此外，我们还致力于开发高效的事件特征选择与检测架构，利用稀疏选择机制在保证精度的同时大幅提升计算效率，为高速运动目标检测与极端光照场景下的视觉感知提供技术支撑。
-
+本方向聚焦于事件相机 (Event Camera) 与脉冲神经网络 (SNN) 的协同研究。旨在结合类脑传感器的极速、高动态优势与 SNN 的异步、低功耗计算特性。主要研究内容包括：构建基于 SNN 的时空特征提取与事件分组框架；设计事件信号驱动的纹理增强与视频重建网络；探索事件引导的语义分割与多模态融合模型。我们致力于开发高效的类脑感知与计算架构，为高速、极端场景下的视觉应用提供低延迟、低能耗的技术支撑。
 <!--more-->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
